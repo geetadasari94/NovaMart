@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Profile | ShopEase</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/profile.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+<div class="logo">
+
+<a href="index.html">
+
+<h2>🛒 ShopEase</h2>
+
+</a>
+
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="products.html">Products</a></li>
+
+<li><a href="wishlist.html">Wishlist</a></li>
+
+<li><a href="cart.html">Cart</a></li>
+
+<li><a class="active" href="profile.html">Profile</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- ================= PROFILE ================= -->
+
+<section class="profile-section">
+
+<div class="profile-card">
+
+<div class="profile-image">
+
+<i class="fa-solid fa-user-circle"></i>
+
+</div>
+
+<h2 id="userName">
+
+Guest User
+
+</h2>
+
+<p id="userEmail">
+
+guest@example.com
+
+</p>
+
+<hr>
+
+<div class="profile-details">
+
+<p>
+
+<strong>📱 Phone :</strong>
+
+<span id="userPhone">
+
+Not Available
+
+</span>
+
+</p>
+
+<p>
+
+<strong>🏠 Address :</strong>
+
+<span>
+
+India
+
+</span>
+
+</p>
+
+<p>
+
+<strong>❤️ Wishlist :</strong>
+
+<span id="wishCount">
+
+0
+
+</span>
+
+Items
+
+</p>
+
+<p>
+
+<strong>🛒 Cart :</strong>
+
+<span id="cartCount">
+
+0
+
+</span>
+
+Items
+
+</p>
+
+</div>
+
+<div class="profile-buttons">
+
+<a href="wishlist.html">
+
+<button>
+
+My Wishlist
+
+</button>
+
+</a>
+
+<a href="cart.html">
+
+<button>
+
+My Cart
+
+</button>
+
+</a>
+
+<button onclick="logout()">
+
+Logout
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="footer">
+
+<p>
+
+© 2026 ShopEase | All Rights Reserved
+
+</p>
+
+</div>
+
+</footer>
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="js/auth.js"></script>
+
+<script>
+
+const user = JSON.parse(localStorage.getItem("loggedInUser"));
+
+if(user){
+
+document.getElementById("userName").innerHTML = user.name;
+
+document.getElementById("userEmail").innerHTML = user.email;
+
+document.getElementById("userPhone").innerHTML = user.phone;
+
+}
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+document.getElementById("cartCount").innerHTML = cart.length;
+
+let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+
+document.getElementById("wishCount").innerHTML = wishlist.length;
+
+function logout(){
+
+localStorage.removeItem("loggedInUser");
+
+alert("Logged Out Successfully!");
+
+window.location.href="login.html";
+
+}
+
+</script>
+
+</body>
+
+</html>

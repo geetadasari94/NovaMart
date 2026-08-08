@@ -1,0 +1,249 @@
+/* ==========================================
+   ShopEase - Profile Page CSS
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    color:#333;
+}
+
+/* ================= PROFILE SECTION ================= */
+
+.profile-section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:60px 20px;
+}
+
+.profile-card{
+    width:100%;
+    max-width:700px;
+    background:#fff;
+    border-radius:20px;
+    padding:40px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* ================= PROFILE IMAGE ================= */
+
+.profile-image{
+    width:140px;
+    height:140px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:#0d6efd;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:80px;
+    box-shadow:0 8px 20px rgba(13,110,253,.3);
+}
+
+.profile-image img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+/* ================= USER INFO ================= */
+
+.profile-card h2{
+    font-size:32px;
+    color:#0d6efd;
+    margin-bottom:10px;
+}
+
+.profile-card p{
+    color:#666;
+    font-size:16px;
+}
+
+.profile-card hr{
+    margin:25px 0;
+    border:none;
+    border-top:1px solid #ddd;
+}
+
+/* ================= DETAILS ================= */
+
+.profile-details{
+    text-align:left;
+}
+
+.profile-details p{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px;
+    margin-bottom:15px;
+    background:#f8f9fa;
+    border-radius:10px;
+    border-left:5px solid #0d6efd;
+    font-size:17px;
+}
+
+.profile-details strong{
+    color:#0d6efd;
+}
+
+.profile-details span{
+    font-weight:500;
+    color:#333;
+}
+
+/* ================= BUTTONS ================= */
+
+.profile-buttons{
+    margin-top:30px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.profile-buttons button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    background:#0d6efd;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.profile-buttons button:hover{
+    background:#084298;
+    transform:translateY(-3px);
+}
+
+.profile-buttons a{
+    text-decoration:none;
+}
+
+/* Logout Button */
+
+.profile-buttons button:last-child{
+    background:#dc3545;
+}
+
+.profile-buttons button:last-child:hover{
+    background:#b02a37;
+}
+
+/* ================= STATS ================= */
+
+.profile-stats{
+    margin-top:35px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.stat-card{
+    background:#eef4ff;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.stat-card h3{
+    color:#0d6efd;
+    font-size:28px;
+    margin-bottom:8px;
+}
+
+.stat-card p{
+    color:#555;
+}
+
+/* ================= ORDER HISTORY ================= */
+
+.order-history{
+    margin-top:40px;
+    text-align:left;
+}
+
+.order-history h3{
+    color:#0d6efd;
+    margin-bottom:20px;
+}
+
+.order-item{
+    background:#f8f9fa;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:15px;
+    border-left:5px solid #198754;
+}
+
+.order-item h4{
+    margin-bottom:8px;
+}
+
+.order-item p{
+    color:#666;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:60px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+.profile-card{
+    padding:30px 20px;
+}
+
+.profile-buttons{
+    grid-template-columns:1fr;
+}
+
+.profile-stats{
+    grid-template-columns:1fr;
+}
+
+.profile-details p{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:8px;
+}
+
+}
+
+@media(max-width:480px){
+
+.profile-image{
+    width:110px;
+    height:110px;
+    font-size:60px;
+}
+
+.profile-card h2{
+    font-size:26px;
+}
+
+.profile-details p{
+    font-size:15px;
+}
+
+}

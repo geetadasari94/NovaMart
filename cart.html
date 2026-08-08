@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shopping Cart | ShopEase</title>
+
+<link rel="stylesheet" href="css/cart.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+<div class="logo">
+
+<a href="index.html">
+
+<h2>🛒 ShopEase</h2>
+
+</a>
+
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="products.html">Products</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+<li>
+
+<a href="wishlist.html">
+
+<i class="fa-solid fa-heart"></i>
+
+Wishlist
+
+</a>
+
+</li>
+
+<li>
+
+<a class="active" href="cart.html">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+Cart
+
+<span id="cartCount">0</span>
+
+</a>
+
+</li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- ================= PAGE TITLE ================= -->
+
+<section class="cart-title">
+
+<h1>
+
+🛒 Shopping Cart
+
+</h1>
+
+<p>
+
+Review your selected products
+
+</p>
+
+</section>
+
+<!-- ================= CART ================= -->
+
+<section class="cart-container">
+
+<div class="cart-items">
+
+<h2>
+
+Your Items
+
+</h2>
+
+<div id="cartItems">
+
+<!-- JavaScript Loads Products -->
+
+</div>
+
+</div>
+
+<div class="cart-summary">
+
+<h2>
+
+Order Summary
+
+</h2>
+
+<hr>
+
+<div class="summary-row">
+
+<span>Items</span>
+
+<span id="itemCount">0</span>
+
+</div>
+
+<div class="summary-row">
+
+<span>Subtotal</span>
+
+<span id="subTotal">₹0</span>
+
+</div>
+
+<div class="summary-row">
+
+<span>GST (18%)</span>
+
+<span id="gst">₹0</span>
+
+</div>
+
+<div class="summary-row total">
+
+<span>Total</span>
+
+<span id="grandTotal">₹0</span>
+
+</div>
+
+<button onclick="checkout()">
+
+Proceed To Checkout
+
+</button>
+
+<button class="clear-btn" onclick="clearCart()">
+
+Clear Cart
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= EMPTY CART ================= -->
+
+<section id="emptyCart" style="display:none;">
+
+<h2>
+
+🛒 Your Cart is Empty
+
+</h2>
+
+<p>
+
+Looks like you haven't added any products yet.
+
+</p>
+
+<a href="products.html">
+
+<button>
+
+Continue Shopping
+
+</button>
+
+</a>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="footer">
+
+<p>
+
+© 2026 ShopEase | All Rights Reserved
+
+</p>
+
+</div>
+
+</footer>
+
+<!-- ================= JS ================= -->
+
+<script src="js/products.js"></script>
+
+<script src="js/cart.js"></script>
+
+<script>
+
+displayCart();
+
+</script>
+
+</body>
+
+</html>

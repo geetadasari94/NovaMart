@@ -1,0 +1,302 @@
+/* ======================================
+   ShopEase Responsive CSS
+====================================== */
+
+/* ========= Large Tablets ========= */
+
+@media (max-width:1200px){
+
+header{
+    padding:15px 5%;
+}
+
+.hero{
+    padding:60px 5%;
+}
+
+.products,
+.products-page,
+.categories,
+.features,
+.contact-section,
+.about-section{
+    padding:60px 5%;
+}
+
+}
+
+/* ========= Tablets ========= */
+
+@media (max-width:992px){
+
+/* Navbar */
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+/* Hero */
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text,
+.hero-image{
+    width:100%;
+}
+
+.hero-text h1{
+    font-size:42px;
+}
+
+.hero-image{
+    margin-top:30px;
+}
+
+/* Product Details */
+
+.product-details{
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+.buttons{
+    justify-content:center;
+}
+
+/* Cart */
+
+.cart-container{
+    grid-template-columns:1fr;
+}
+
+.cart-summary{
+    order:-1;
+}
+
+/* Checkout */
+
+.checkout-container{
+    grid-template-columns:1fr;
+}
+
+/* Contact */
+
+.contact-container{
+    grid-template-columns:1fr;
+}
+
+/* About */
+
+.about-container{
+    flex-direction:column;
+}
+
+.about-image,
+.about-content{
+    width:100%;
+}
+
+/* Footer */
+
+.footer-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+/* ========= Mobile ========= */
+
+@media (max-width:768px){
+
+.logo h2{
+    font-size:24px;
+}
+
+nav ul{
+    flex-direction:column;
+    align-items:center;
+}
+
+/* Hero */
+
+.hero{
+    padding:40px 20px;
+}
+
+.hero-text h1{
+    font-size:34px;
+}
+
+.hero-text p{
+    font-size:16px;
+}
+
+.hero button{
+    width:100%;
+}
+
+/* Search */
+
+.search-section input{
+    width:100%;
+}
+
+/* Products */
+
+.product-grid{
+    grid-template-columns:1fr;
+}
+
+/* Product */
+
+.product-image img{
+    max-width:280px;
+}
+
+/* Profile */
+
+.profile-buttons{
+    grid-template-columns:1fr;
+}
+
+/* Features */
+
+.features{
+    grid-template-columns:1fr;
+}
+
+/* Categories */
+
+.category-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+/* Footer */
+
+.footer-container{
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+.social{
+    justify-content:center;
+}
+
+}
+
+/* ========= Small Mobile ========= */
+
+@media (max-width:576px){
+
+.page-title h1{
+    font-size:28px;
+}
+
+.page-title p{
+    font-size:15px;
+}
+
+.hero-text h1{
+    font-size:28px;
+}
+
+.hero-text p{
+    font-size:15px;
+}
+
+button{
+    width:100%;
+}
+
+input,
+textarea{
+    width:100%;
+}
+
+/* Cart */
+
+.cart-item{
+    flex-direction:column;
+    text-align:center;
+}
+
+.cart-item img{
+    width:160px;
+    height:160px;
+}
+
+.quantity{
+    justify-content:center;
+}
+
+/* Checkout */
+
+.checkout-form,
+.order-summary{
+    padding:20px;
+}
+
+/* Profile */
+
+.profile-card{
+    padding:20px;
+}
+
+.profile-image{
+    width:100px;
+    height:100px;
+    font-size:50px;
+}
+
+/* Categories */
+
+.category-container{
+    grid-template-columns:1fr;
+}
+
+}
+
+/* ========= Extra Small Phones ========= */
+
+@media (max-width:400px){
+
+.logo h2{
+    font-size:20px;
+}
+
+.hero-text h1{
+    font-size:24px;
+}
+
+.page-title h1{
+    font-size:24px;
+}
+
+.product-card{
+    margin:0 auto;
+}
+
+.cart-summary h2,
+.cart-items h2{
+    font-size:22px;
+}
+
+.summary-row{
+    font-size:14px;
+}
+
+footer{
+    font-size:14px;
+}
+
+}

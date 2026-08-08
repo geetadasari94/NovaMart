@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Checkout | ShopEase</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+<div class="logo">
+<a href="index.html">
+<h2>🛒 ShopEase</h2>
+</a>
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="products.html">Products</a></li>
+
+<li><a href="wishlist.html">Wishlist</a></li>
+
+<li><a href="cart.html">Cart</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- ================= PAGE TITLE ================= -->
+
+<section class="page-title">
+
+<h1>Checkout</h1>
+
+<p>
+
+Complete your order securely
+
+</p>
+
+</section>
+
+<!-- ================= CHECKOUT ================= -->
+
+<section class="checkout-container">
+
+<!-- LEFT -->
+
+<div class="checkout-form">
+
+<h2>Billing Details</h2>
+
+<form id="checkoutForm">
+
+<input
+type="text"
+id="name"
+placeholder="Full Name"
+required>
+
+<input
+type="email"
+id="email"
+placeholder="Email Address"
+required>
+
+<input
+type="tel"
+id="phone"
+placeholder="Phone Number"
+required>
+
+<textarea
+id="address"
+rows="4"
+placeholder="Complete Address"
+required></textarea>
+
+<input
+type="text"
+id="city"
+placeholder="City"
+required>
+
+<input
+type="text"
+id="state"
+placeholder="State"
+required>
+
+<input
+type="text"
+id="pincode"
+placeholder="PIN Code"
+required>
+
+<h3>Payment Method</h3>
+
+<label>
+
+<input
+type="radio"
+name="payment"
+value="Cash on Delivery"
+checked>
+
+Cash on Delivery
+
+</label>
+
+<br><br>
+
+<label>
+
+<input
+type="radio"
+name="payment"
+value="UPI">
+
+UPI
+
+</label>
+
+<br><br>
+
+<label>
+
+<input
+type="radio"
+name="payment"
+value="Credit Card">
+
+Credit Card
+
+</label>
+
+<br><br>
+
+<button type="submit">
+
+Place Order
+
+</button>
+
+</form>
+
+</div>
+
+<!-- RIGHT -->
+
+<div class="order-summary">
+
+<h2>Order Summary</h2>
+
+<hr>
+
+<div id="checkoutItems">
+
+<!-- Cart Products -->
+
+</div>
+
+<hr>
+
+<h3>
+
+Subtotal :
+<span id="checkoutSubtotal">
+
+₹0
+
+</span>
+
+</h3>
+
+<h3>
+
+GST (18%) :
+<span id="checkoutGST">
+
+₹0
+
+</span>
+
+</h3>
+
+<h2>
+
+Grand Total :
+<span id="checkoutTotal">
+
+₹0
+
+</span>
+
+</h2>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="footer-container">
+
+<div>
+
+<h3>ShopEase</h3>
+
+<p>
+
+Your Trusted Online Shopping Store
+
+</p>
+
+</div>
+
+<div>
+
+<h3>Quick Links</h3>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="products.html">Products</a></li>
+
+<li><a href="cart.html">Cart</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h3>Customer Support</h3>
+
+<ul>
+
+<li>Email</li>
+
+<li>Returns</li>
+
+<li>FAQ</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<p style="text-align:center;padding:20px;">
+
+© 2026 ShopEase. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="js/products.js"></script>
+
+<script src="js/cart.js"></script>
+<script src="js/checkout.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Wishlist | ShopEase</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+<div class="logo">
+
+<a href="index.html">
+
+<h2>🛒 ShopEase</h2>
+
+</a>
+
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="products.html">Products</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+<li>
+
+<a class="active" href="wishlist.html">
+
+<i class="fa-solid fa-heart"></i>
+
+Wishlist
+
+</a>
+
+</li>
+
+<li>
+
+<a href="cart.html">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+Cart
+
+<span id="cartCount">0</span>
+
+</a>
+
+</li>
+
+</ul>
+
+</nav>
+
+<div class="nav-buttons">
+
+<a href="profile.html" class="login-btn">
+
+Profile
+
+</a>
+
+</div>
+
+</header>
+
+<!-- ================= TITLE ================= -->
+
+<section class="page-title">
+
+<h1>❤️ My Wishlist</h1>
+
+<p>
+
+Save your favourite products here.
+
+</p>
+
+</section>
+
+<!-- ================= WISHLIST ITEMS ================= -->
+
+<section class="wishlist-section">
+
+<div id="wishlistContainer" class="product-grid">
+
+<!-- Wishlist Products Load Here -->
+
+</div>
+
+</section>
+
+<!-- ================= EMPTY WISHLIST ================= -->
+
+<section id="emptyWishlist" style="display:none;text-align:center;padding:60px;">
+
+<h2>
+
+💔 Your Wishlist is Empty
+
+</h2>
+
+<p>
+
+You haven't added any favourite products yet.
+
+</p>
+
+<br>
+
+<a href="products.html">
+
+<button>
+
+Continue Shopping
+
+</button>
+
+</a>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="footer-container">
+
+<div>
+
+<h3>ShopEase</h3>
+
+<p>
+
+Your trusted online shopping destination.
+
+</p>
+
+</div>
+
+<div>
+
+<h3>Quick Links</h3>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="products.html">Products</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h3>Customer</h3>
+
+<ul>
+
+<li><a href="cart.html">Cart</a></li>
+
+<li><a href="profile.html">Profile</a></li>
+
+<li><a href="login.html">Login</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h3>Follow Us</h3>
+
+<div class="social">
+
+<i class="fab fa-facebook"></i>
+
+<i class="fab fa-instagram"></i>
+
+<i class="fab fa-twitter"></i>
+
+<i class="fab fa-linkedin"></i>
+
+</div>
+
+</div>
+
+</div>
+
+<p class="copyright">
+
+© 2026 ShopEase. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="js/products.js"></script>
+
+<script src="js/cart.js"></script>
+<script src="js/wishlist.js"></script>
+
+<script>
+
+displayWishlist();
+
+</script>
+
+</body>
+
+</html>
